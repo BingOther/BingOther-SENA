@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bingo</title>
+
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+    name='viewport' />
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <!-- CSS Files -->
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../assets/css/estilo.css" rel="stylesheet" />
+  <link href="../assets/css/now-ui-dashboard.css?v=1.3.0" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="../assets/demo/demo.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-2">
+        <img src="../imagenes/letraB.png" class="letraBingo">
+      </div>
+      <div class="col-6">
+        <table class="tablaBingo" id="tabla1">
+          <tr class="elemento">
+            <td class="celda1">1</td>
+            <td class="celda1">2</td>
+            <td class="celda1">3</td>
+            <td class="celda1">4</td>
+            <td class="celda1">5</td>
+            <td class="celda1">6</td>
+            <td class="celda1">7</td>
+            <td class="celda1">8</td>
+          </tr>
+          <tr class="elemento">
+            <td class="celda1">9</td>
+            <td class="celda1">10</td>
+            <td class="celda1">11</td>
+            <td class="celda1">12</td>
+            <td class="celda1">13</td>
+            <td class="celda1">14</td>
+            <td class="celda1">15</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="card" style="width: 22rem; height: 0em;">
+        <div class="card-body">
+          <h5 class="card-title centrar">Generador de balotas</h5>
+          <p id="demo" class="numeroRan centrar">0</p>
+          <script>
+            function Generador() {
+              var x = document.getElementById("demo")
+              x.innerHTML = Math.floor((Math.random() * 75) + 1);
+            }
+          </script>
+          <div class="centrar">
+            <button type="button" class="btn btn-primary centrar" style="background: blue;"
+              data-target="#nuevoCliente" onclick="Generador()">
+              Generar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-2">
+        <img src="../imagenes/letraI.png" class="letraBingo">
+      </div>
+      <div class="col-6">
+        <table class="tablaBingo" id="tabla2">
+          <tr class="elemento">
+            <td class="celda2">16</td>
+            <td class="celda2">17</td>
+            <td class="celda2">18</td>
+            <td class="celda2">19</td>
+            <td class="celda2">20</td>
+            <td class="celda2">21</td>
+            <td class="celda2">22</td>
+            <td class="celda2">23</td>
+          </tr>
+          <tr class="elemento">
+            <td class="celda2">24</td>
+            <td class="celda2">25</td>
+            <td class="celda2">26</td>
+            <td class="celda2">27</td>
+            <td class="celda2">28</td>
+            <td class="celda2">29</td>
+            <td class="celda2">30</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-2">
+        <img src="../imagenes/letraN.png" class="letraBingo">
+      </div>
+      <div class="col-6">
+        <table class="tablaBingo" id="tabla3">
+          <tr class="elemento">
+            <td class="celda3">31</td>
+            <td class="celda3">32</td>
+            <td class="celda3">33</td>
+            <td class="celda3">34</td>
+            <td class="celda3">35</td>
+            <td class="celda3">36</td>
+            <td class="celda3">37</td>
+            <td class="celda3">38</td>
+          </tr>
+          <tr class="elemento">
+            <td class="celda3">39</td>
+            <td class="celda3">40</td>
+            <td class="celda3">41</td>
+            <td class="celda3">42</td>
+            <td class="celda3">43</td>
+            <td class="celda3">44</td>
+            <td class="celda3">45</td>
+          </tr>
+        </table>
+      </div>
+      <div class="card" style="width: 22rem; height: 0em;">
+        <div class="card-body">
+          <div class="table-responsive tablaGandores">
+            <table class="table">
+              <thead class="letras">
+                <th>
+                  #
+                </th>
+                <th>
+                  Nombres y apellidos
+                </th>
+              </thead>
+              <tbody>
+                <tr class="letras">
+                  <td>
+                    2312323
+                  </td>
+                  <td>
+                    Brahian Rojas
+                  </td>
+                </tr>
+                <tr class="letras">
+                  <td>
+                    4354345
+                  </td>
+                  <td>
+                    Sebastian Ramirez
+                  </td>
+                </tr>
+                <tr class="letras">
+                  <td>
+                    9837802
+                  </td>
+                  <td>
+                    David Sanchez
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            
+          </div>
+          <div class="centrar">
+          <button type="button" class="btn btn-primary" style="background: blue;" data-toggle="modal"
+                data-target="#exampleModal">
+                Agregar ganador
+              </button>
+          </div>
+        </div>
+      </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Agregar ganador</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-row">
+              <div class="form-group col-md-8">
+                <label for="inputEmail4">Serie</label>
+                <input type="text" class="form-control" id="inputEmail4">
+                <label for="inputEmail4">Nombre y apellido</label>
+                <input type="text" class="form-control" id="inputEmail4">
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary" style="background: blue">Agregar</button>
+          </div>
+        </div>
+      </div>
+</div>
+    </div>
+
+    <br>
+    <div class="row">
+      <div class="col-2">
+        <img src="../imagenes/letraG.png" class="letraBingo">
+      </div>
+      <div class="col-6">
+        <table class="tablaBingo" id="tabla4">
+          <tr class="elemento">
+            <td class="celda4">46</td>
+            <td class="celda4">47</td>
+            <td class="celda4">48</td>
+            <td class="celda4">49</td>
+            <td class="celda4">50</td>
+            <td class="celda4">51</td>
+            <td class="celda4">52</td>
+            <td class="celda4">53</td>
+          </tr>
+          <tr class="elemento">
+            <td class="celda4">54</td>
+            <td class="celda4">55</td>
+            <td class="celda4">56</td>
+            <td class="celda4">57</td>
+            <td class="celda4">58</td>
+            <td class="celda4">59</td>
+            <td class="celda4">60</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-2">
+        <img src="../imagenes/letraO.png" class="letraBingo">
+      </div>
+      <div class="col-6">
+        <table class="tablaBingo" id="tabla5">
+          <tr class="elemento">
+            <td class="celda5">61</td>
+            <td class="celda5">62</td>
+            <td class="celda5">63</td>
+            <td class="celda5">64</td>
+            <td class="celda5">65</td>
+            <td class="celda5">66</td>
+            <td class="celda5">67</td>
+            <td class="celda5">68</td>
+          </tr>
+          <tr class="elemento">
+            <td class="celda5">69</td>
+            <td class="celda5">70</td>
+            <td class="celda5">71</td>
+            <td class="celda5">72</td>
+            <td class="celda5">73</td>
+            <td class="celda5">74</td>
+            <td class="celda5">75</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script src="../assets/js/core/jquery.min.js"></script>
+  <script src="../assets/js/core/popper.min.js"></script>
+  <script src="../assets/js/core/bootstrap.min.js"></script>
+  <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  <!--  Google Maps Plugin    -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+  <!-- Chart JS -->
+  <script src="../assets/js/plugins/chartjs.min.js"></script>
+  <!--  Notifications Plugin    -->
+  <script src="../assets/js/plugins/bootstrap-notify.js"></script>
+  <!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="../assets/js/now-ui-dashboard.min.js?v=1.3.0" type="text/javascript"></script>
+  <!-- Now Ui Dashboard DEMO methods, don't include it in your project! -->
+  <script src="../assets/demo/demo.js"></script>
+</body>
+
+</html>
