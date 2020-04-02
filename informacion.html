@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BingOther</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<script src="https://kit.fontawesome.com/4da356debb.js" crossorigin="anonymous"></script>
+
+	<!-- Favicon -->
+
+	<link rel="icon" href="icono.ico" type="'image/x-icon'/">
+
+</head>
+<body>
+
+	<header id="Inicio">
+
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+			  <img class="logo" src="img/BingOther logo.png">
+
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    <ul class="navbar-nav mr-auto">
+			      <li class="nav-item">
+			        <a class="nav-link espacio" href="index.html">Inicio</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link espacio" href="contacto.html">Contacto</a>
+			      </li>
+			    </ul>
+			    <!-- Button trigger modal -->
+
+			     <div class="button-modal">
+				<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#Login">
+				  Iniciar sesión
+				</button>
+				<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#Register">
+				  Registrarse
+				</button>
+				</div>
+			  </div>
+			</nav>
+
+			<!-- Modal 1 -->
+			<div class="modal fade" id="Login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">Iniciar sesión</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			        <form>
+					  <div class="form-group">
+					    <label for="exampleInputEmail1">Correo electrónico</label>
+					    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+					    <small id="emailHelp" class="form-text text-muted">No compartiremos tu información con nadie.</small>
+					  </div>
+					  <div class="form-group">
+					    <label for="exampleInputPassword1">Contraseña</label>
+					    <input type="password" class="form-control" id="exampleInputPassword1">
+					  </div>
+					  <div class="form-group form-check">
+					  </div>
+					</form>
+			      </div>
+			      <div class="modal-footer">
+			        <a class="boton boton-amarillo d-block boton-modal" href="sessionopen.html">Iniciar sesión</a>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<!-- Modal 2 -->
+			<div class="modal fade" id="Register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">Registro</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+					<form>
+					  <div class="form-row">
+					    <div class="form-group col-md-6">
+					      <label for="inputEmail4">Nombre</label>
+					      <input type="text" class="form-control" id="inputAddress" placeholder="Ingrese su nombre">
+					    </div>
+					    <div class="form-group col-md-6">
+					      <label for="inputPassword4">Apellido</label>
+					      <input type="text" class="form-control" id="inputAd" placeholder="Ingrese su apellido">
+					    </div>
+					  </div>
+					  <div class="form-group">
+					    <label for="inputAddress">Fecha de nacimiento</label>
+					    <input type="date" class="form-control" id="inputAddress" placeholder="Ingrese nombres">
+					  </div>
+					  <div class="form-group">
+					    <label for="inputAddress">Correo electrónico</label>
+					    <input type="email" class="form-control" id="emailregister" placeholder="Ingrese nombres">
+					  </div>
+					  <div class="form-group">
+					    <label for="inputAddress">Contraseña</label>
+					    <input type="password" class="form-control" id="passwordregister1" placeholder="Ingrese nombres">
+					  </div>
+					  <div class="form-group">
+					    <label for="inputAddress">Confirmar contraseña</label>
+					    <input type="password" class="form-control" id="passwordregister2" placeholder="Ingrese nombres">
+					  </div>
+					</form>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+			        <button type="button" class="btn btn-warning">Registrar</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+	</header>
+
+	<main>
+
+		<div class="seccion-inferior contenedor seccion">
+
+			<section class="eventoinfo">	
+
+			<h3 class="centrar fw-300">Próximo evento</h3>
+
+				<article class="informacion">
+
+					<div class="imagen">
+
+						<img src="img/event1info.jpg" alt="Entrada de blog">
+
+					</div>
+
+					<div class="texto-entrada">
+
+						<a href="entrada.html">
+							<h4>- La playa -</h4>
+						</a>
+
+						<p>Hora: 2:30 PM</p>
+						<p>Fecha: 01/04/2020</p>
+						<p>Costo: <span>6.000$</span> </p>
+
+					</div>
+
+				</article>
+
+				<div class="infoevento">
+					<h3 class="centrar fw-300">Información</h3>
+
+					<p class="justificar inf">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto eaque dolor, nostrum aut inventore esse ducimus vel, ullam provident quibusdam, minima quaerat culpa? Delectus minima aliquam, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, eius ad rem illo non repudiandae repellendus id tempora libero ipsa quo illum, consequuntur et dolores blanditiis veniam, earum ipsam sint.</p>
+				</div>
+
+			</section>
+
+			<section class="mapa">
+
+				<h3 class="centrar fw-300">Mapa</h3>
+
+				<div class="map">
+
+					<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d53362.783956468236!2d-75.55912855106695!3d6.235677136223983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sgoogle%20maps%20la%20playa%20medellin!5e0!3m2!1ses!2sco!4v1582873549000!5m2!1ses!2sco" width="500" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+				</div>
+
+			</section>
+
+		</div>
+
+	</main>
+
+		<footer class="site-footer seccion">
+		<div class="contenedor contenedor-footer">
+				<nav class="social">
+					<i class="fab fa-facebook"></i>
+					<i class="fab fa-twitter"></i>
+					<i class="fab fa-instagram"></i>
+				</nav>
+
+			<p class="copyright">Todos los derechos reservados BingOther 2020 &copy;</p>
+		</div>
+
+	</footer>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Próximos eventos</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<script src="https://kit.fontawesome.com/4da356debb.js" crossorigin="anonymous"></script>
+
+	<!-- Favicon -->
+
+	<link rel="icon" href="icono.ico" type="'image/x-icon'/">
+
+
+</head>
+<body>
+
+	<header>
+
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+			  <img class="logo" src="img/BingOther logo.png">
+
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    <ul class="navbar-nav mr-auto">
+			      <li class="nav-item">
+			        <a class="nav-link espacio" href="index.html">Inicio</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link espacio" href="contacto.html">Contacto</a>
+			      </li>
+			    </ul>
+			    <!-- Button trigger modal -->
+
+			     <div class="button-modal">
+				<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#Login">
+				  Iniciar sesión
+				</button>
+				<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#Register">
+				  Registrarse
+				</button>
+				</div>
+			  </div>
+			</nav>
+
+			<!-- Modal 1 -->
+			<div class="modal fade" id="Login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">Iniciar sesión</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			        <form>
+					  <div class="form-group">
+					    <label for="exampleInputEmail1">Correo electrónico</label>
+					    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+					    <small id="emailHelp" class="form-text text-muted">No compartiremos tu información con nadie.</small>
+					  </div>
+					  <div class="form-group">
+					    <label for="exampleInputPassword1">Contraseña</label>
+					    <input type="password" class="form-control" id="exampleInputPassword1">
+					  </div>
+					  <div class="form-group form-check">
+					  </div>
+					</form>
+			      </div>
+			      <div class="modal-footer">
+			        <a class="boton boton-amarillo d-block boton-modal" href="sessionopen.html">Iniciar sesión</a>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<!-- Modal 2 -->
+			<div class="modal fade" id="Register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">Registro</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+					<form>
+					  <div class="form-row">
+					    <div class="form-group col-md-6">
+					      <label for="inputEmail4">Nombre</label>
+					      <input type="text" class="form-control" id="inputAddress" placeholder="Ingrese su nombre">
+					    </div>
+					    <div class="form-group col-md-6">
+					      <label for="inputPassword4">Apellido</label>
+					      <input type="text" class="form-control" id="inputAd" placeholder="Ingrese su apellido">
+					    </div>
+					  </div>
+					  <div class="form-group">
+					    <label for="inputAddress">Fecha de nacimiento</label>
+					    <input type="date" class="form-control" id="inputAddress" placeholder="Ingrese nombres">
+					  </div>
+					  <div class="form-group">
+					    <label for="inputAddress">Correo electrónico</label>
+					    <input type="email" class="form-control" id="emailregister" placeholder="Ingrese nombres">
+					  </div>
+					  <div class="form-group">
+					    <label for="inputAddress">Contraseña</label>
+					    <input type="password" class="form-control" id="passwordregister1" placeholder="Ingrese nombres">
+					  </div>
+					  <div class="form-group">
+					    <label for="inputAddress">Confirmar contraseña</label>
+					    <input type="password" class="form-control" id="passwordregister2" placeholder="Ingrese nombres">
+					  </div>
+					</form>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+			        <button type="button" class="btn btn-warning">Registrar</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+	</header>
+
+	<main class="seccion contenedor">
+
+		<h2 class="fw-300 centrar">Próximos eventos</h2>
+
+		<div class="contenedor-anuncios">
+
+			<div class="anuncio">
+
+				<img src="img/event1.jpg" alt="Anuncio en la casa del lago">
+
+				<div class="contenido-anuncio">
+
+					<h3>- La playa -</h3>
+
+					<p>Hora: 3:00 PM</p>
+					<p>Fecha: 20/03/2020</p>
+					<p>Costo: <span>4.000$</span> </p>
+
+					<a class="boton boton-amarillo d-block" href="informacion.html">Ver más información</a>
+
+				</div>
+			</div>
+
+			<div class="anuncio">
+
+				<img src="img/event2.jpg" alt="Anuncio en la casa de lujo">
+
+				<div class="contenido-anuncio">
+
+					<h3>- Pasaje Boulevard -</h3>
+
+					<p>Hora: 5:00 PM</p>
+					<p>Fecha: 24/03/2020</p>
+					<p>Costo: <span>4.000$</span> </p>
+
+					<a class="boton boton-amarillo d-block" href="informacion.html">Ver más información</a>
+
+				</div>		
+
+			</div>
+
+			<div class="anuncio">
+
+				<img src="img/event3.jpg" alt="Anuncio de casa en alberca">
+
+				<div class="contenido-anuncio">
+
+					<h3>- Casino broadway -</h3>
+
+					<p>Hora: 2:30 PM</p>
+					<p>Fecha: 01/04/2020</p>
+					<p>Costo: <span>6.000$</span> </p>
+
+					<a class="boton boton-amarillo d-block" href="informacion.html">Ver más información</a>
+
+				</div>
+
+			</div>
+
+			<div class="anuncio">
+
+				<img src="img/event4.jpg" alt="Anuncio de casa en alberca">
+
+				<div class="contenido-anuncio">
+
+					<h3>- Casino luxury games -</h3>
+
+					<p>Hora: 6:00 PM</p>
+					<p>Fecha: 02/04/2020</p>
+					<p>Costo: <span>7.000$</span> </p>
+
+					<a class="boton boton-amarillo d-block" href="informacion.html">Ver más información</a>
+
+				</div>
+
+			</div>
+
+			<div class="anuncio">
+
+				<img src="img/event5.jpg" alt="Anuncio de casa en alberca">
+
+				<div class="contenido-anuncio">
+
+					<h3>- Casino río -</h3>
+
+					<p>Hora: 4:45 PM</p>
+					<p>Fecha: 05/04/2020</p>
+					<p>Costo: <span>7.000$</span> </p>
+
+					<a class="boton boton-amarillo d-block" href="informacion.html">Ver más información</a>
+
+				</div>
+
+			</div>
+
+			<div class="anuncio">
+
+				<img src="img/event6.png" alt="Anuncio de casa en alberca">
+
+				<div class="contenido-anuncio">
+
+					<h3>- Casino san remo -</h3>
+
+					<p>Hora: 1:30 PM</p>
+					<p>Fecha: 10/04/2020</p>
+					<p>Costo: <span>4.000$</span> </p>
+
+					<a class="boton boton-amarillo d-block" href="informacion.html">Ver más información</a>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</main>
+
+	<footer class="site-footer seccion">
+		<div class="contenedor contenedor-footer">
+				<nav class="social">
+					<i class="fab fa-facebook"></i>
+					<i class="fab fa-twitter"></i>
+					<i class="fab fa-instagram"></i>
+				</nav>
+
+			<p class="copyright">Todos los derechos reservados BingOther 2020 &copy;</p>
+		</div>
+
+	</footer>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</html>
